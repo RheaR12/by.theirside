@@ -516,4 +516,8 @@ footer a:hover {
   color: var(--purple);
   padding-left: 2px;
 }
+body {
+  margin: 0;
+  padding-top: 90px; /* makes consistent space below safety bar */
+}
 
