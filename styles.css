@@ -188,11 +188,7 @@ header {
 .hero {
   text-align: center;
   padding: 140px 20px;
-  background: linear-gradient(
-    to bottom,
-    var(--soft-purple),
-    #ded7e4
-  );
+  background-color: #ded7e4; /* solid colour instead of gradient */
   color: var(--purple);
 }
 
