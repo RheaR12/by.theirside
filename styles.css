@@ -61,6 +61,10 @@ header {
   justify-content: space-between;
   border-bottom: 1px solid #d7e1e4;
   position: sticky;
+  top: 36px; /* pushes header below safety bar */
+  z-index: 2000;
+}
+
   top: 0;
   z-index: 1000;
 }
@@ -158,8 +162,10 @@ header {
 ========================================= */
 
 .safety-bar {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   background-color: var(--maroon);
   color: white;
   padding: 8px 15px;
@@ -168,7 +174,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  z-index: 1500;
+  z-index: 3000; /* ABOVE header and dropdowns */
 }
 
 .safety-bar a {
@@ -179,6 +185,7 @@ header {
   text-decoration: none;
   font-weight: 600;
 }
+
 
 
 /* =========================================
