@@ -122,51 +122,64 @@ header {
    UPDATED DROPDOWNS — CLEAN & MINIMAL
 ========================================= */
 
+/* =========================================
+   UPDATED DROPDOWNS — CLEAN, NO FLICKER
+========================================= */
+
+/* Parent wrapper */
 .dropdown {
   position: relative;
+  padding-bottom: 6px; /* expands hover area to prevent flicker */
 }
 
+/* Parent link */
 .dropdown > a {
   position: relative;
 }
 
-/* UPDATED DROPDOWN FIX — eliminates hover gap */
+.dropdown > a::after {
+  content: " ▾";
+  font-size: 0.65rem;
+  margin-left: 3px;
+  color: var(--purple);
+}
+
+/* Dropdown panel */
 .dropdown-content {
   display: none;
   position: absolute;
   left: 0;
-  top: 100%; /* aligns directly below parent link */
+  top: 100%; /* sits directly under parent link */
   width: 180px;
   background-color: var(--off-white);
   border: 1px solid var(--soft-purple);
   border-radius: 8px;
-  box-shadow: 0 3px 8px rgba(62, 12, 112, 0.10);
+  box-shadow: 0 3px 8px rgba(62, 12, 112, 0.10); /* subtle purple shadow */
   padding: 8px 0;
   z-index: 2500;
 
-  /* KEY FIXES: */
-  margin-top: -1px; /* removes 1px hover gap */
-  padding-top: 6px; /* extends hover zone upward */
+  /* KEY FIXES for hover gap */
+  margin-top: -1px; /* removes dead pixel gap between link & dropdown */
+  padding-top: 6px; /* extends hover area upward */
 }
 
-
-/* Dropdown items */
+/* Dropdown item */
 .dropdown-content a {
   display: block;
   padding: 12px 16px; /* medium padding */
   font-size: 0.9rem;  /* smaller text */
-  text-decoration: none;
   color: var(--navy);
+  text-decoration: none;
   transition: 0.25s ease;
 }
 
-/* Hover: bold purple highlight */
+/* Hover effect */
 .dropdown-content a:hover {
   background-color: var(--soft-purple);
   color: white;
 }
 
-/* Show dropdown on hover */
+/* Show dropdown when hovering anywhere in dropdown zone */
 .dropdown:hover .dropdown-content {
   display: block;
 }
