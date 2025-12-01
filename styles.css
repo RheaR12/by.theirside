@@ -510,3 +510,12 @@ footer a:hover {
 .mobile-nav hr:last-of-type {
   margin-bottom: 15px;
 }
+.mobile-section-title {
+  margin-top: 15px;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--purple);
+  padding-left: 2px;
+}
+
