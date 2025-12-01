@@ -479,3 +479,34 @@ footer a:hover {
     font-size: 1.9rem;
   }
 }
+/* =========================================
+   MOBILE NAV BUTTONS (Fix alignment + spacing)
+========================================= */
+
+.mobile-nav .cta-btn,
+.mobile-nav .safe-exit {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin: 8px 0;        /* space between buttons */
+  padding: 14px 0;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Make sure text stays white */
+.mobile-nav .cta-btn {
+  background-color: var(--purple);
+  color: white !important;
+}
+
+.mobile-nav .safe-exit {
+  background-color: var(--maroon);
+  color: white !important;
+}
+
+/* Add space above buttons */
+.mobile-nav hr:last-of-type {
+  margin-bottom: 15px;
+}
