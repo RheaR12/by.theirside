@@ -130,20 +130,25 @@ header {
   position: relative;
 }
 
-/* Dropdown container */
+/* UPDATED DROPDOWN FIX — eliminates hover gap */
 .dropdown-content {
   display: none;
   position: absolute;
-  left: 0; /* full-width alignment */
-  top: 38px;
-  width: 180px; /* clean defined width */
+  left: 0;
+  top: 100%; /* aligns directly below parent link */
+  width: 180px;
   background-color: var(--off-white);
   border: 1px solid var(--soft-purple);
   border-radius: 8px;
-  box-shadow: 0 3px 8px rgba(62, 12, 112, 0.10); /* soft purple-tinted shadow */
-  padding: 8px 0; /* vertical padding for container */
+  box-shadow: 0 3px 8px rgba(62, 12, 112, 0.10);
+  padding: 8px 0;
   z-index: 2500;
+
+  /* KEY FIXES: */
+  margin-top: -1px; /* removes 1px hover gap */
+  padding-top: 6px; /* extends hover zone upward */
 }
+
 
 /* Dropdown items */
 .dropdown-content a {
@@ -165,6 +170,7 @@ header {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
 
 
 /* =========================================
