@@ -21,6 +21,7 @@
 
 body {
   margin: 0;
+  padding-top: 90px; /* makes room for safety bar + header */
   font-family: 'Poppins', sans-serif;
   background-color: var(--off-white);
   color: var(--navy);
@@ -50,6 +51,40 @@ h2 {
 
 
 /* =========================================
+   SAFETY BAR (Always Fixed at Top)
+========================================= */
+
+.safety-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--maroon);
+  color: white;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  z-index: 3000; /* above everything */
+}
+
+.safety-bar a {
+  background-color: white;
+  color: var(--maroon);
+  padding: 4px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.safety-bar a:hover {
+  opacity: 0.85;
+}
+
+
+/* =========================================
    HEADER + NAVIGATION (DESKTOP)
 ========================================= */
 
@@ -61,12 +96,8 @@ header {
   justify-content: space-between;
   border-bottom: 1px solid #d7e1e4;
   position: sticky;
-  top: 36px; /* pushes header below safety bar */
+  top: 36px; /* sits directly below safety bar */
   z-index: 2000;
-}
-
-  top: 0;
-  z-index: 1000;
 }
 
 .desktop-nav {
@@ -106,6 +137,7 @@ header {
   border-radius: 8px;
   border: 1px solid #d7e1e4;
   top: 32px;
+  z-index: 2500; /* above header */
 }
 
 .dropdown-content a {
@@ -158,44 +190,13 @@ header {
 
 
 /* =========================================
-   SAFETY BAR (STICKY)
-========================================= */
-
-.safety-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: var(--maroon);
-  color: white;
-  padding: 8px 15px;
-  font-size: 0.9rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  z-index: 3000; /* ABOVE header and dropdowns */
-}
-
-.safety-bar a {
-  background-color: white;
-  color: var(--maroon);
-  padding: 4px 10px;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-
-
-/* =========================================
-   HOMEPAGE HERO
+   HERO SECTION (Solid Background)
 ========================================= */
 
 .hero {
   text-align: center;
   padding: 140px 20px;
-  background-color: #ded7e4; /* solid colour instead of gradient */
+  background-color: #ded7e4; /* solid color, no gradient */
   color: var(--purple);
 }
 
@@ -211,7 +212,9 @@ header {
   font-weight: 400;
   color: var(--navy);
 }
-/* ---------- HERO BUTTONS ---------- */
+
+
+/* ---------- HERO CTA BUTTONS ---------- */
 
 .hero-cta {
   margin-top: 30px;
@@ -230,7 +233,7 @@ header {
   transition: 0.25s ease;
 }
 
-/* Primary CTA (purple) */
+/* Primary CTA */
 .primary-btn {
   background-color: var(--purple);
   color: white;
@@ -240,7 +243,7 @@ header {
   background-color: var(--soft-purple);
 }
 
-/* Secondary CTA (outline) */
+/* Secondary CTA */
 .secondary-btn {
   background-color: transparent;
   border: 2px solid var(--purple);
@@ -354,7 +357,7 @@ footer a:hover {
 
 
 /* =========================================
-   MOBILE NAV (SLIDE-OUT)
+   MOBILE NAV (Slide-Out)
 ========================================= */
 
 .mobile-menu-btn {
@@ -455,4 +458,3 @@ footer a:hover {
     font-size: 1.9rem;
   }
 }
-
