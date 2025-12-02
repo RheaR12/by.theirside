@@ -596,7 +596,8 @@ body {
 
 .story-section {
   background-color: #fef3ea;     /* soft neutral from your palette */
-  padding: 60px 40px;
+  margin-top: 0;          /* remove gap */
+  padding-top: 60px;      /* keeps story readable */
 }
 
 .story-grid {
