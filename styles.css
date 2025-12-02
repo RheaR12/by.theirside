@@ -367,22 +367,30 @@ header {
 .page-community .page-hero {
   background-color: #fef3ea; /* peach */
 }
+/* WRAPPER — makes entire strip peach */
+.tagline-wrapper {
+  background-color: #fef3ea;
+  padding: 0 0 40px 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* TAGLINE TEXT */
 .hero-tagline {
   text-align: center;
-  margin-top: 0px;          /* small space under hero */
-  margin-bottom: 0px;          /* IMPORTANT: prevent white strip */
+  margin-top: 10px;
+  margin-bottom: 0;
   font-size: 1.15rem;
   max-width: 900px;
-  margin-left: 0px;
-  margin-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
   line-height: 1.5;
   padding: 0 20px;
-  background-color: #fef3ea; /* peach */
 }
 
 /* Base text colour */
 .hero-tagline .bts-text {
-  color: var(--blue-grey);   /* #8ba6b1 */
+  color: var(--blue-grey);
 }
 
 /* Highlighted words */
