@@ -311,24 +311,47 @@ header {
 
 
 /* =========================================
-   SUBPAGE HERO
+   PAGE-SPECIFIC HERO COLOURS
 ========================================= */
 
-.page-hero {
-  background: linear-gradient(
-    to right,
-    var(--soft-purple),
-    #ded7e4
-  );
-  padding: 90px 20px;
-  text-align: center;
-  color: var(--purple);
+/* OUR STORY (about.html) */
+.page-about .page-hero {
+  background-color: #fef3ea; /* soft peach */
 }
 
-.page-hero h1 {
-  font-size: 2.4rem;
-  margin: 0;
-  letter-spacing: 1px;
+/* OUR PEOPLE */
+.page-people .page-hero {
+  background-color: #ebc2b9; /* rose nude */
+}
+
+/* OUR VISION */
+.page-vision .page-hero {
+  background-color: #a980ac; /* lavender */
+}
+
+/* COMMUNITY CIRCLES */
+.page-circles .page-hero {
+  background-color: #8ba6b1; /* blue-grey */
+}
+
+/* WORKSHOPS */
+.page-workshops .page-hero {
+  background-color: #f8f7f4; /* off-white */
+}
+
+/* YOUTH RESOURCES */
+.page-youth .page-hero {
+  background-color: #ded7e4; /* soft lavender-grey */
+}
+
+/* PARENT RESOURCES */
+.page-parents .page-hero {
+  background-color: #a980ac; /* lavender */
+}
+
+/* COMMUNITY RESOURCES */
+.page-community .page-hero {
+  background-color: #fef3ea; /* peach */
 }
 
 
