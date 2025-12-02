@@ -598,8 +598,11 @@ body {
   background-color: #fef3ea;     /* soft neutral from your palette */
   margin-top: 0;          /* remove gap */
   padding-top: 60px;      /* keeps story readable */
-   padding-bottom: 120px;  
+  padding-bottom: 120px;  
+  padding-left: 80px;   /* increase from default */
+  padding-right: 40px;  /* optional */
 }
+
 
 .story-grid {
   display: grid;
