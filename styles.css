@@ -634,7 +634,7 @@ body {
 ========================================= */
 
 .story-section {
-  background-color: #fef3ea;     /* soft neutral from your palette */
+  background-color: #fef3ea; !important;   /* soft neutral from your palette */
   margin-top: 0;          /* remove gap */
   padding-top: 60px;      /* keeps story readable */
   padding-bottom: 120px;  
