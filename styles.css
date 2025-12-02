@@ -313,6 +313,20 @@ header {
 /* =========================================
    PAGE-SPECIFIC HERO COLOURS
 ========================================= */
+.page-hero {
+  padding: 110px 20px;       /* restores big spacing */
+  text-align: center;
+  background-color: #fef3ea; /* stays page-specific */
+  margin: 0;                 /* ensure no extra gaps */
+}
+
+.page-hero h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;           /* larger again */
+  margin: 0;
+  color: var(--purple);
+  font-weight: 600;
+}
 
 /* OUR STORY (about.html) */
 .page-about .page-hero {
