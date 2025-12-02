@@ -634,13 +634,14 @@ body {
 ========================================= */
 
 .story-section {
-  background-color: #fef3ea; !important;   /* soft neutral from your palette */
-  margin-top: 0;          /* remove gap */
-  padding-top: 60px;      /* keeps story readable */
-  padding-bottom: 120px;  
-  padding-left: 80px;   /* increase from default */
-  padding-right: 40px;  /* optional */
+  background-color: #fef3ea !important;
+  margin-top: 0;
+  padding-top: 60px;
+  padding-bottom: 120px;
+  padding-left: 80px;
+  padding-right: 40px;
 }
+
 
 
 .story-grid {
