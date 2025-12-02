@@ -367,14 +367,10 @@ header {
 .page-community .page-hero {
   background-color: #fef3ea; /* peach */
 }
-/* =========================================
-   HERO TAGLINE (ABOUT PAGE)
-========================================= */
-
 .hero-tagline {
   text-align: center;
-  margin-top: -40px;        /* pulls tagline closer to hero */
-  margin-bottom: 40px;
+  margin-top: 10px;          /* small space under hero */
+  margin-bottom: 0;          /* IMPORTANT: prevent white strip */
   font-size: 1.15rem;
   max-width: 900px;
   margin-left: auto;
@@ -385,31 +381,21 @@ header {
 
 /* Base text colour */
 .hero-tagline .bts-text {
-  color: #8ba6b1;           /* your soft blue-grey */
+  color: var(--blue-grey);   /* #8ba6b1 */
 }
 
 /* Highlighted words */
 .hero-tagline .highlight-1 {
-  color: #3e0c70;           /* deep purple for accountability */
+  color: var(--purple);
   font-weight: 700;
 }
-
 .hero-tagline .highlight-2 {
-  color: #700c0c;           /* maroon for justice */
+  color: var(--maroon);
   font-weight: 700;
 }
-
 .hero-tagline .highlight-3 {
-  color: #002b3d;           /* navy for safety */
+  color: var(--navy);
   font-weight: 700;
-}
-.hero-tagline {
-  background-color: #fef3ea;   /* match hero colour to remove harsh divide */
-}
-.tagline-wrapper {
-  background-color: #fef3ea !important;
-  margin: 0;
-  padding: 0;
 }
 
 
@@ -639,7 +625,7 @@ body {
 ========================================= */
 
 .story-section {
-  background-color: #fef3ea !important;
+  background-color: var(--cream) !important;
   margin-top: 0;
   padding-top: 60px;
   padding-bottom: 120px;
