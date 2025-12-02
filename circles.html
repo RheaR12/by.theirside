@@ -3,105 +3,165 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>our story — by their side</title>
+  <title>community circles — by their side</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="page-circles">
 
-  <!-- Include same header on all pages -->
-  <header>
-<header>
-  <div class="logo">
-    <img src="assets/by-their-side-logo.png" alt="by their side organization logo">
-  </div>
-
-  <!-- DESKTOP NAVIGATION -->
-  <nav class="desktop-nav" aria-label="Main Navigation">
-    
-    <!-- ABOUT -->
-    <div class="dropdown">
-      <a href="#">about</a>
-      <div class="dropdown-content">
-        <a href="about.html">our story</a>
-        <a href="people.html">our people</a>
-        <a href="vision.html">our vision</a>
-      </div>
-    </div>
-
-    <!-- OUR WORK -->
-    <div class="dropdown">
-      <a href="#">our work</a>
-      <div class="dropdown-content">
-        <a href="circles.html">community circles</a>
-        <a href="workshops.html">workshops</a>
-      </div>
-    </div>
-
-    <!-- RESOURCES -->
-    <div class="dropdown">
-      <a href="#">resources</a>
-      <div class="dropdown-content">
-        <a href="youth.html">youth</a>
-        <a href="parents.html">parents</a>
-        <a href="community.html">community</a>
-      </div>
-    </div>
-
-    <!-- HEADER BUTTONS -->
-    <a class="cta-btn" href="https://forms.gle/6LntV6TC6Eu5mDzo9" target="_blank">stay connected</a>
-    <a class="safe-exit" href="https://www.google.com" target="_blank">safe exit</a>
-  </nav>
-
-  <!-- MOBILE MENU BUTTON -->
-  <button class="mobile-menu-btn" aria-label="Open Menu">
-    <span></span><span></span><span></span>
-  </button>
-
-  <!-- MOBILE SLIDE-OUT NAV -->
-  <nav class="mobile-nav" aria-label="Mobile Navigation">
-    <button class="close-mobile-nav" aria-label="Close Menu">&times;</button>
-
-    <a href="about.html">our story</a>
-    <a href="people.html">our people</a>
-    <a href="vision.html">our vision</a>
-
-    <hr />
-
-    <a href="circles.html">community circles</a>
-    <a href="workshops.html">workshops</a>
-
-    <hr />
-
-    <a href="youth.html">youth resources</a>
-    <a href="parents.html">parent resources</a>
-    <a href="community.html">community resources</a>
-
-    <hr />
-
-    <a class="cta-btn" href="https://forms.gle/6LntV6TC6Eu5mDzo9" target="_blank">stay connected</a>
-    <a class="safe-exit" href="https://www.google.com" target="_blank">safe exit</a>
-  </nav>
-</header>
-
-  </header>
-
-  <!-- Safety bar -->
+  <!-- SAFETY BAR (Always at top) -->
   <div class="safety-bar">
     <span>If you need to leave quickly,</span>
     <a href="https://www.google.com" target="_blank">safe exit</a>
   </div>
 
+  <!-- HEADER (same structure as other pages) -->
+  <header>
+    <a href="index.html" class="brand">
+      <img src="assets/by-their-side-logo.png" alt="by their side logo" class="brand-logo">
+      <span class="brand-text"><em>by their side</em></span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Main Navigation">
+      <div class="dropdown">
+        <a href="#">about</a>
+        <div class="dropdown-content">
+          <a href="about.html">our story</a>
+          <a href="people.html">our people</a>
+          <a href="vision.html">our vision</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="#">our work</a>
+        <div class="dropdown-content">
+          <a href="circles.html">community circles</a>
+          <a href="workshops.html">workshops</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="#">resources</a>
+        <div class="dropdown-content">
+          <a href="youth.html">youth resources</a>
+          <a href="parents.html">parent resources</a>
+          <a href="community.html">community resources</a>
+        </div>
+      </div>
+
+      <a class="cta-btn" href="https://forms.gle/6LntV6TC6Eu5mDzo9" target="_blank">stay connected</a>
+      <a class="safe-exit" href="https://www.google.com" target="_blank">safe exit</a>
+    </nav>
+
+    <!-- MOBILE MENU BUTTON -->
+    <button class="mobile-menu-btn" aria-label="Open Menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- MOBILE NAV MENU -->
+    <nav class="mobile-nav" aria-label="Mobile Navigation">
+      <button class="close-mobile-nav" aria-label="Close Menu">&times;</button>
+
+      <p class="mobile-section-title">about</p>
+      <a href="about.html">our story</a>
+      <a href="people.html">our people</a>
+      <a href="vision.html">our vision</a>
+
+      <hr>
+
+      <p class="mobile-section-title">our work</p>
+      <a href="circles.html">community circles</a>
+      <a href="workshops.html">workshops</a>
+
+      <hr>
+
+      <p class="mobile-section-title">resources</p>
+      <a href="youth.html">youth resources</a>
+      <a href="parents.html">parent resources</a>
+      <a href="community.html">community resources</a>
+
+      <hr>
+
+      <a class="cta-btn" href="https://forms.gle/6LntV6TC6Eu5mDzo9" target="_blank">stay connected</a>
+      <a class="safe-exit" href="https://www.google.com" target="_blank">safe exit</a>
+    </nav>
+  </header>
+
   <!-- PAGE HERO -->
   <section class="page-hero">
-    <h1>our story</h1>
+    <h1>community circles</h1>
   </section>
 
   <!-- MAIN CONTENT -->
-  <section class="content-section">
-    <p>This is where your page content goes.</p>
+  <section class="circles-section">
+    <div class="circles-grid">
+
+      <!-- LEFT: MAIN DESCRIPTION -->
+      <div class="circles-main">
+        <h2>monthly circles for our community</h2>
+        <p>
+          Each month, <em>by their side</em> hosts community circles for Indo-Caribbean and South Asian
+          young people, ages 19–25, across the gender spectrum. These circles are a casual, grounded space
+          to talk about our culture, our relationships, and the ways violence shows up in our lives — from
+          the small comments that sting to the bigger patterns we’re trying to unlearn.
+        </p>
+        <p>
+          Circles are not workshops or lectures. They’re conversations. We sit together, share stories if
+          we want to, listen to each other, and make room for both heaviness and joy. It’s a non-judgmental,
+          brave space where you don’t have to have the “right” words to belong.
+        </p>
+
+        <h2 class="circles-subheading">how we hold conversation</h2>
+        <p>
+          We lean into arts-based ways of speaking and listening — using writing, drawing, music, and
+          storytelling as tools to express what doesn’t always fit neatly into sentences. You never have
+          to share your work out loud if you don’t want to.
+        </p>
+        <p>
+          Our starting point is always the gifts our community already holds: our humour, our creativity,
+          our language, our aunties’ stories, our friendships, our faith, our resilience. Circles aren’t
+          about “fixing” people — they’re about building on what’s already here and imagining what safer,
+          more caring relationships could look like together.
+        </p>
+      </div>
+
+      <!-- RIGHT: INFO + CTA -->
+      <aside class="circles-sidebar">
+        <div class="card circles-card">
+          <h3>who it’s for</h3>
+          <p>monthly community circles are for:</p>
+          <ul>
+            <li>Indo-Caribbean and South Asian youth (19–25)</li>
+            <li>young women, men, and gender-diverse people</li>
+            <li>anyone curious about culture, care, and relationships</li>
+          </ul>
+        </div>
+
+        <div class="card circles-card">
+          <h3>what to expect</h3>
+          <ul>
+            <li>casual, conversation-based sessions</li>
+            <li>arts-based prompts (writing, drawing, music, etc.)</li>
+            <li>a non-judgmental, brave space — share only what feels right</li>
+            <li>free to attend, hosted in community spaces in Peel Region</li>
+          </ul>
+        </div>
+
+        <div class="card circles-card circles-cta-card">
+          <h3>join a future circle</h3>
+          <p>
+            If you’d like to hear about upcoming monthly circles, fill out the interest form below and 
+            we’ll be in touch with dates and details.
+          </p>
+          <a href="https://forms.gle/6LntV6TC6Eu5mDzo9" target="_blank" class="hero-btn primary-btn">
+            sign up for community circles
+          </a>
+        </div>
+      </aside>
+
+    </div>
   </section>
 
   <!-- FOOTER -->
@@ -128,4 +188,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
