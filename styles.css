@@ -373,15 +373,38 @@ header {
 
 .hero-tagline {
   text-align: center;
-  margin-top: -20px;           /* pulls it closer to the hero */
-  margin-bottom: 40px;         /* spacing before story section */
+  margin-top: -40px;        /* pulls tagline closer to hero */
+  margin-bottom: 40px;
   font-size: 1.15rem;
-  color: #3e0c70;              /* your brand purple */
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
   line-height: 1.5;
   padding: 0 20px;
+}
+
+/* Base text colour */
+.hero-tagline .bts-text {
+  color: #8ba6b1;           /* your soft blue-grey */
+}
+
+/* Highlighted words */
+.hero-tagline .highlight-1 {
+  color: #3e0c70;           /* deep purple for accountability */
+  font-weight: 700;
+}
+
+.hero-tagline .highlight-2 {
+  color: #700c0c;           /* maroon for justice */
+  font-weight: 700;
+}
+
+.hero-tagline .highlight-3 {
+  color: #002b3d;           /* navy for safety */
+  font-weight: 700;
+}
+.hero-tagline {
+  background-color: #fef3ea;   /* match hero colour to remove harsh divide */
 }
 
 
