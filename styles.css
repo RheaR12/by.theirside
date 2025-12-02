@@ -367,6 +367,22 @@ header {
 .page-community .page-hero {
   background-color: #fef3ea; /* peach */
 }
+/* =========================================
+   HERO TAGLINE (ABOUT PAGE)
+========================================= */
+
+.hero-tagline {
+  text-align: center;
+  margin-top: -20px;           /* pulls it closer to the hero */
+  margin-bottom: 40px;         /* spacing before story section */
+  font-size: 1.15rem;
+  color: #3e0c70;              /* your brand purple */
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+  padding: 0 20px;
+}
 
 
 /* =========================================
