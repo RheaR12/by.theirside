@@ -774,3 +774,86 @@ body {
   }
 }
 
+/* =========================================
+   WORKSHOPS PAGE
+========================================= */
+
+.page-workshops .page-hero {
+  background-color: var(--blush); /* soft warm tone */
+}
+
+.workshop-tagline {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--navy);
+  font-weight: 400;
+}
+
+/* Section layout */
+.workshops-section {
+  padding: 80px 20px;
+  background-color: var(--off-white);
+}
+
+.alt-bg {
+  background-color: var(--near-white);
+}
+
+.workshops-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.workshops-section h2 {
+  font-size: 1.9rem;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--navy);
+}
+
+.workshops-container p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--navy);
+}
+
+.workshops-list {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--navy);
+  padding-left: 20px;
+}
+
+.workshops-list li {
+  margin-bottom: 12px;
+}
+
+/* CTA section */
+.cta-section {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+
+.cta-section .hero-btn {
+  font-size: 1.1rem;
+  padding: 14px 26px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .workshops-section {
+    padding: 60px 20px;
+  }
+
+  .workshops-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .workshop-tagline {
+    font-size: 1.05rem;
+  }
+}
